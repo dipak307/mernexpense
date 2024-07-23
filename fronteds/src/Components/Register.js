@@ -84,7 +84,7 @@ const Register = () => {
     try {
       
 const apiUrl = process.env.REACT_APP_API_URL;
-      const res = await axios.post(`${apiUrl}/api/v1/register`, formData, {
+      const res = await axios.post(`https://mernexpense.vercel.app/api/v1/register`, formData, {
         headers: {
           'Content-Type': 'application/json'
         }
