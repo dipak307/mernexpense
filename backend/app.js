@@ -19,7 +19,7 @@ app.use(express.json());
 app.use(cookieParser()); // Use cookie-parser middleware before any route handling
 
 // CORS Configuration
-const allowedOrigins = ['http://localhost:3000','https://mernexpense-iqnd.vercel.app']; // Add your production URL here
+const allowedOrigins = ['http://localhost:3000','https://mernexpense-op3l.vercel.app']; // Add your production URL here
 app.use(cors({
     origin: (origin, callback) => {
         if (allowedOrigins.includes(origin) || !origin) {
