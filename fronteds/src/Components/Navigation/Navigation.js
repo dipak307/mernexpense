@@ -10,6 +10,8 @@ const Navigation = ({active,setActive}) => {
         const Navigate=useNavigate();
         const [setData,setUserData]=useState("");
       // console.log(active);
+        
+const apiUrl = process.env.REACT_APP_API_URL;
       const logout = () => {
         localStorage.removeItem('token');
         console.log("logout button..")
@@ -19,7 +21,7 @@ const Navigation = ({active,setActive}) => {
     useEffect(() => {
       const fetchUserData = async () => {
           try {
-              const response = await axios.get("https://mernexpense.vercel.app/api/v1/profile", {
+              const response = await axios.get(`${apiUrl}/api/v1/profile`, {
                   headers: {
                       'Authorization': `Bearer ${localStorage.getItem('token')}`
                   }
