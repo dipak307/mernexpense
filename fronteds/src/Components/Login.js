@@ -90,7 +90,9 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('https://mernexpense.vercel.app/api/v1/login', formData, {
+      
+const apiUrl = process.env.REACT_APP_API_URL;
+      const res = await axios.post(`${apiUrl}/api/v1/login`, formData, {
         headers: {
           'Content-Type': 'application/json'
         }
