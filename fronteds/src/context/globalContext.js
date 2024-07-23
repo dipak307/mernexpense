@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import axios from "axios";
 
 axios.defaults.withCredentials = true;
-const BASE_URL = "http://localhost:5000/api/v1/";
+const BASE_URL = "https://mernexpense.vercel.app/api/v1/";
 
 const GlobalContext = React.createContext();
 
