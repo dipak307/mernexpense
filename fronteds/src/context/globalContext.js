@@ -3,7 +3,7 @@ import axios from "axios";
 
 axios.defaults.withCredentials = true;
 const apiUrl = process.env.REACT_APP_API_URL;
-const BASE_URL = `${apiUrl}/api/v1/`;
+const BASE_URL = `https://mernexpense.vercel.app/api/v1/`;
 
 const GlobalContext = React.createContext();
 
