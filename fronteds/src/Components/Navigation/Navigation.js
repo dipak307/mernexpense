@@ -19,7 +19,7 @@ const Navigation = ({active,setActive}) => {
     useEffect(() => {
       const fetchUserData = async () => {
           try {
-              const response = await axios.get("http://localhost:5000/api/v1/profile", {
+              const response = await axios.get("https://mernexpense.vercel.app/api/v1/profile", {
                   headers: {
                       'Authorization': `Bearer ${localStorage.getItem('token')}`
                   }
