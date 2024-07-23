@@ -21,7 +21,7 @@ const apiUrl = process.env.REACT_APP_API_URL;
     useEffect(() => {
       const fetchUserData = async () => {
           try {
-              const response = await axios.get(`${apiUrl}/api/v1/profile`, {
+              const response = await axios.get(`https://mernexpense.vercel.app/api/v1/profile`, {
                   headers: {
                       'Authorization': `Bearer ${localStorage.getItem('token')}`
                   }
